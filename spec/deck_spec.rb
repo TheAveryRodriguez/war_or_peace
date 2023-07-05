@@ -1,6 +1,4 @@
-
-require 'rspec'
-require './lib/card.rb'  
+ 
 require './lib/deck.rb' 
 
 # Create cards
