@@ -1,5 +1,5 @@
- 
-require './lib/deck.rb' 
+require './lib/card'
+require './lib/deck' 
 
 # Create cards
 card1 = Card.new(:diamond, 'Queen', 12)
