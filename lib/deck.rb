@@ -1,4 +1,4 @@
-require './card.rb'
+require './lib/card'
 
 class Deck
     attr_reader :cards
@@ -27,4 +27,4 @@ class Deck
       @cards << card
     end
   end
-  
+
