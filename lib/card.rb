@@ -9,5 +9,5 @@ class Card
     end
 end
 
-card1 = Card.new("heart", "Jack", 11)
-p card1
+#card1 = Card.new("heart", "Jack", 11)
+#p card1
