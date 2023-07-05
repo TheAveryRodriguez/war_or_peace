@@ -1,6 +1,6 @@
 require 'rspec'
-require './lib/card'
-require './lib/deck' 
+require './lib/card.rb'
+require './lib/deck.rb' 
 
 # Create cards
 card1 = Card.new(:diamond, 'Queen', 12)
