@@ -1,16 +1,24 @@
-require 'rspec'
-require './lib/card.rb'
-require './lib/deck.rb'
+require "rspec"
+require "./lib/card"
+require "./lib/deck"
 
-card1 = Card.new(:diamond, 'Queen', 12)
-card2 = Card.new(:spade, '3', 3)
-card3 = Card.new(:heart, 'Ace', 14)
+RSpec.describe Deck do
+  it "exists" do
+    card1 = Card.new(:diamond, "Queen", 12)
+    card2 = Card.new(:spade, "3", 3)
+    card3 = Card.new(:heart, "Ace", 14)
 
-cards = [card1, card2, card3]
-deck = Deck.new(cards)
+    cards = [card1, card2, card3]
 
+    deck = Deck.new(cards)
+    # deck = Deck.new
 
-# Tests
-#removed_card = deck.remove_card
-#card4 = Card.new(:club, '5', 5)
-#deck.add_card(card4)
+    expect(deck).to be_an_instance_of(Deck)
+  end
+
+  it "has readable attributes" do
+    deck = Deck.new
+
+    expect(deck.cards).to eq([card1, card2, card3])
+  end
+end
